@@ -14,7 +14,7 @@
         .workshop {
             $padding: 1.5rem;
 
-            width: calc(30% - 2*$padding);
+            width: calc(34% - 2*$padding);
             height: 40vw;
             background-size: cover;
             background-repeat: no-repeat;
@@ -22,6 +22,8 @@
             flex-direction: column;
             justify-content: end;
             padding: $padding;
+            align-items: start;
+            text-align: left;
             
             
             h3 {
