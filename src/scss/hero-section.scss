@@ -1,0 +1,22 @@
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('/src/media/images/vicky-ng-lIQRPsA43tw-unsplash.jpg');
+    background-size: 100vw;   
+
+    p {
+        color: $neutral-100;
+        font-size: $fs-700;
+        font-weight: $fw-semibold;
+    }
+
+    p:nth-of-type(2) {
+       padding-left: 80px; 
+    }
+
+    .heroText {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+    }
+}
