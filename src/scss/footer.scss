@@ -1,0 +1,32 @@
+footer {
+    padding-top: $section-padding;
+    padding-inline: $container-padding;
+    background-color: $neutral-400;
+
+    .sitemap {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $section-padding / 2;
+
+        h3 {
+            font-size: $fs-300;
+            color: $neutral-600;
+            margin-bottom: 2rem;
+        }
+
+        li {
+            margin-bottom: .75rem;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+        font-size: $fs-100;
+    }
+}
+
+.footerImg {
+    width: 100%;
+}
