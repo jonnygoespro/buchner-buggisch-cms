@@ -2,12 +2,12 @@
 @import "variables";
 @import "fonts";
 @import "global";
-@import "navigation";
 
-@import "hero-section";
-@import "motto-section";
-@import "workshop-section";
-@import "green-section";
-@import "jobs-section";
-@import "locations-section";
-@import "footer";
+@import "layout/navigation";
+@import "layout/hero-section";
+@import "layout/motto-section";
+@import "layout/workshop-section";
+@import "layout/green-section";
+@import "layout/jobs-section";
+@import "layout/locations-section";
+@import "layout/footer";
