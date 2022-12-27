@@ -1,4 +1,4 @@
-.green {
+#green {
     padding-block: $section-padding;
     padding-inline: $container-padding;
     background-color: $primary-500;
@@ -6,13 +6,11 @@
     p {
         font-size: $fs-400;
         line-height: $ln-700;
-    
-        p:first-of-type(1) {
-            width: 50%;
-        }
     }
 
-
+    & > p:first-of-type {
+        width: 50%;
+    }
 
     img {
         width: 100%;

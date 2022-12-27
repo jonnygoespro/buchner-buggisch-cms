@@ -9,6 +9,8 @@ header {
     align-items: center;
     padding-left: $padding;
     padding-right: $padding;
+    transition: all .3s;
+    z-index: 5;
 
     a {
         color: $neutral-100;
@@ -24,8 +26,13 @@ header {
 
         li {
             margin-left: 32px;
-            font-size: $fs-200;
+            font-size: $fs-300;
             font-weight: $fw-regular;
         }
     }
+}
+
+.active {
+    background-color: $primary-700;
+    box-shadow: $neutral-800 0px 0px 5px;
 }
