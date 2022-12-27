@@ -1,5 +1,5 @@
 header {
-    $padding: 5%;   
+    $padding: $container-padding;   
 
     position: fixed;
     width: calc(100% - $padding * 2);
