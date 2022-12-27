@@ -1,0 +1,31 @@
+.green {
+    padding-block: $section-padding;
+    padding-inline: $container-padding;
+    background-color: $primary-500;
+
+    p {
+        font-size: $fs-400;
+        line-height: $ln-700;
+    
+        p:first-of-type(1) {
+            width: 50%;
+        }
+    }
+
+
+
+    img {
+        width: 100%;
+        margin-block: $section-padding / 2;
+    }
+
+    .text {
+        margin-left: 50%;
+        width: auto;
+
+        p:nth-of-type(2) {
+            font-size: $fs-300;
+            margin-top: $section-padding / 2;
+        }
+    }
+}
