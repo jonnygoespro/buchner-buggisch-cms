@@ -30,3 +30,28 @@
         width: 50%;
     }
 }
+
+@include breakpoint(0, $mobile) {
+    #jobs {
+        padding-block: $section-padding-mobile;
+        flex-direction: column;
+
+        .text {
+            width: 100%;
+            margin-bottom: $section-padding-mobile / 2;
+
+            h2 {
+                margin-bottom: $section-padding-mobile / 2;
+            }
+
+            p {
+                font-size: $fs-350;
+                line-height: $ln-500;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
