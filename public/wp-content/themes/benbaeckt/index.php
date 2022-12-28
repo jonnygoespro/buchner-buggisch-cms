@@ -213,7 +213,7 @@
         <p>Bildquellen: <a href="https://unsplash.com/s/photos/bakery" target="_blank">https://unsplash.com/s/photos/bakery</a></p>
       </div>
     </footer>
-    <img src="<?php echo get_template_directory_uri();?>/images/brot_740px.jpg" alt="Hände die ein Brot halten" sizes="740px"
+    <img class="footerImg" src="<?php echo get_template_directory_uri();?>/images/brot_740px.jpg" alt="Hände die ein Brot halten" sizes="740px"
     srcset="<?php echo get_template_directory_uri();?>/images/brot_740px.jpg 740w,
     <?php echo get_template_directory_uri();?>/images/brot_1400px.jpg 1400w,
     <?php echo get_template_directory_uri();?>/images/brot_2800px.jpg 2800w" />
