@@ -11,7 +11,7 @@
         h2 {
             font-size: $fs-500;
             line-height: $ln-700;
-            margin-bottom: $section-padding / 2;
+            margin-bottom: calc($section-padding / 2);
         }
 
         p {
@@ -38,10 +38,10 @@
 
         .text {
             width: 100%;
-            margin-bottom: $section-padding-mobile / 2;
+            margin-bottom: calc($section-padding-mobile / 2);
 
             h2 {
-                margin-bottom: $section-padding-mobile / 2;
+                margin-bottom: calc($section-padding-mobile / 2);
             }
 
             p {
