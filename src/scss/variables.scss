@@ -1,3 +1,7 @@
+// Breakpoints
+
+$mobile: 720;
+$desktop: $mobile + 1;
 
 // Colors
 $primary-500: #97BB8B;
@@ -27,10 +31,12 @@ $fw-regular: 400;
 $fw-semibold: 500;
 
 // Sizes
+
 $section-padding: 10rem;
 $container-padding: 5%;
 
 // Line Heights:
+
 $ln-300: 1.5rem;
 $ln-500: 2.25rem;
 $ln-700: 3rem;
