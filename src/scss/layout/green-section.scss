@@ -27,3 +27,30 @@
         }
     }
 }
+
+@include breakpoint(0, $mobile) {
+    #green {
+        padding-block: $section-padding-mobile;
+
+        p {
+            font-size: $fs-350;
+            line-height: $ln-500;
+        }
+
+        & > p:first-of-type {
+            width: 100%;
+        }
+
+        img {
+            margin-block: $section-padding-mobile / 2;
+        }
+
+        .text {
+            margin-left: 0%;
+
+            p:nth-of-type(2) {
+                margin-top: $section-padding-mobile / 2;
+            }
+        }
+    }
+}
