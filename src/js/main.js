@@ -12,3 +12,27 @@ document.addEventListener("scroll", () => {
 
     }
 })
+
+
+// Burger menu
+const burger = document.querySelector("#burger")
+const header = document.querySelector("header")
+const links = document.querySelectorAll("header .mainnav  a")
+let open = false;
+
+burger.addEventListener("click", () => {
+    open = !open;
+
+    if (open) {
+        header.classList.add("open")
+    } else {
+        header.classList.remove("open")
+    }
+})
+
+links.forEach((link) => {
+    link.addEventListener("click", () => {
+        open = false;
+        header.classList.remove("open")
+    })
+})
