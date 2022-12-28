@@ -53,7 +53,11 @@
     </section>
 
     <section id="motto">
-      <img src="<?php echo get_template_directory_uri();?>/images/duncan-kidd-4vkEwpfm36I-unsplash-4a6d998b.jpg" alt="">
+      <img src="<?php echo get_template_directory_uri();?>/images/teig_740px.jpg" alt="" sizes="740px"
+      srcset="<?php echo get_template_directory_uri();?>/images/teig_740px.jpg 740w,
+      <?php echo get_template_directory_uri();?>/images/teig_1400px.jpg 1400w,
+      <?php echo get_template_directory_uri();?>/images/teig_2800px.jpg 2800w" />
+                    
       <div class="text">
         <p>Das Handwerk des Bäckers ist wie eine Kunst, es erfordert Geduld, Präzision und Leidenschaft. Doch am Ende lohnt sich die Mühe, denn wer den Duft frisch gebackenen Brots einmal eingeatmet hat, der weiß, dass es kaum etwas Schöneres gibt.</p>
         <p>Nach diesem Motto arbeitet und lebt die Familie Baeckmann schon seit über 100 Jahren.</p>
@@ -84,7 +88,12 @@
 
     <section id="green">
       <p>“Als Bäcker ist es mir wichtig, nachhaltig zu arbeiten und einen Beitrag zum Schutz unserer Umwelt zu leisten. Deshalb setze ich auf biologische Zutaten, die ohne den Einsatz von Pestiziden und synthetischen Düngemitteln angebaut werden.”</p>
-      <img src="<?php echo get_template_directory_uri();?>/images/noah-buscher-x8ZStukS2PM-unsplash-31186965.jpg" alt="">
+
+      <img src="<?php echo get_template_directory_uri();?>/images/hand_mit_gruen_740px.jpg" alt="" sizes="740px"
+      srcset="<?php echo get_template_directory_uri();?>/images/hand_mit_gruen_740px.jpg 740w,
+      <?php echo get_template_directory_uri();?>/images/hand_mit_gruen_1400px.jpg 1400w,
+      <?php echo get_template_directory_uri();?>/images/hand_mit_gruen_2800px.jpg 2800w" />
+
       <div class="text">
         <p>“Um nachhaltig zu arbeiten, setze ich auch auf erneuerbare Energien in meiner Bäckerei. Dazu kaufe ich Ökostrom und nutze Photovoltaikanlagen”</p>
         <p>-Ben Baeckman, Inhaber</p>
@@ -96,7 +105,10 @@
           <h2>Wir suchen zwei neue Back-Helden!</h2>
           <p>Du bist Bäcker*in und hast Backen zu deiner Superpower erklärt?<br><br>Du bist Konditor*in und lässt mit deinen süßen Kreationen jedes Herz höher schlagen?<br><br><a href="">Dann bewirb dich hier</a><br><br>Wir freuen uns auf deine köstlichen Ideen und die Chance, dich als neues Mitglied unseres Teams willkommen zu heißen!"</p>
       </div>
-      <img src="<?php echo get_template_directory_uri();?>/images/Group 1-1af6e12b.png" alt="">
+      <img src="<?php echo get_template_directory_uri();?>/images/back_prozedur_740px.png" alt="" sizes="740px"
+      srcset="<?php echo get_template_directory_uri();?>/images/back_prozedur_740px.png 740w,
+      <?php echo get_template_directory_uri();?>/images/back_prozedur_1400px.png 1400w,
+      <?php echo get_template_directory_uri();?>/images/back_prozedur_2800px.png 2800w" />
     </section>
 
     <section id="locations">
@@ -104,7 +116,12 @@
 
       <div class="locations">
         <div class="location">
-          <img src="<?php echo get_template_directory_uri();?>/images/nick-karvounis-jN_M0McVNeI-unsplash-dfe86687.jpg" alt="">
+
+          <img src="<?php echo get_template_directory_uri();?>/images/standort1_740px.jpg" alt="" sizes="740px"
+          srcset="<?php echo get_template_directory_uri();?>/images/standort1_740px.jpg 740w,
+          <?php echo get_template_directory_uri();?>/images/standort1_1400px.jpg 1400w,
+          <?php echo get_template_directory_uri();?>/images/standort1_2800px.jpg 2800w" />
+          
             <p>Standort 1</p>
             <p>Sterneckstraße 1, 5020 Salzburg</p>
             <div class="openingHours">
@@ -114,7 +131,10 @@
         </div>
 
         <div class="location">
-          <img src="<?php echo get_template_directory_uri();?>/images/pinar-kucuk-3-PfUgbyWEs-unsplash-690980c1.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/images/standort2_740px.jpg" alt="" sizes="740px"
+          srcset="<?php echo get_template_directory_uri();?>/images/standort2_740px.jpg 740w,
+          <?php echo get_template_directory_uri();?>/images/standort2_1400px.jpg 1400w,
+          <?php echo get_template_directory_uri();?>/images/standort2_2800px.jpg 2800w" />
             <p>Standort 2</p>
             <p>Sterneckstraße 2, 5020 Salzburg</p>
             <div class="openingHours">
@@ -124,7 +144,10 @@
         </div>
 
         <div class="location">
-          <img src="<?php echo get_template_directory_uri();?>/images/andy-li-RndRFJ1v1kk-unsplash-ff91fbce.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri();?>/images/standort3_740px.jpg" alt="" sizes="740px"
+          srcset="<?php echo get_template_directory_uri();?>/images/standort3_740px.jpg 740w,
+          <?php echo get_template_directory_uri();?>/images/standort3_1400px.jpg 1400w,
+          <?php echo get_template_directory_uri();?>/images/standort3_2800px.jpg 2800w" />
             <p>Standort 3</p>
             <p>Sterneckstraße 3, 5020 Salzburg</p>
             <div class="openingHours">
@@ -178,7 +201,10 @@
         <p>Bildquellen: <a href="https://unsplash.com/s/photos/bakery" target="_blank">https://unsplash.com/s/photos/bakery</a></p>
       </div>
     </footer>
-    <img class="footerImg" src="<?php echo get_template_directory_uri();?>/images/nathan-dumlao-YUzSjKG9QmU-unsplash-5935fa27.jpg" alt="">
+    <img src="<?php echo get_template_directory_uri();?>/images/brot_740px.jpg" alt="" sizes="740px"
+    srcset="<?php echo get_template_directory_uri();?>/images/brot_740px.jpg 740w,
+    <?php echo get_template_directory_uri();?>/images/brot_1400px.jpg 1400w,
+    <?php echo get_template_directory_uri();?>/images/brot_2800px.jpg 2800w" />
     <?php wp_footer(); ?>
   </body>
 </html>
