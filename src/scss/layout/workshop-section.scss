@@ -1,3 +1,10 @@
+.divider {
+    height: 1px;
+    width: calc(100% - 2* $container-padding);
+    margin: auto;
+    background-color: $neutral-400;
+}
+
 #workshops {
     padding-block: $section-padding;
     padding-inline: $container-padding;
@@ -24,6 +31,21 @@
             padding: $padding;
             align-items: start;
             text-align: left;
+
+            .row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                svg {
+                    width: 36px;
+
+                    path {
+                        fill: $neutral-100;
+                    }    
+                }
+            }
             
             
             h3 {
@@ -49,6 +71,23 @@
 
             &:nth-of-type(3) {
                 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/src/media/images/pexels-maahid-photos-4435690.jpg');
+            }
+        }
+    }
+}
+
+@include breakpoint($mobile, $mobile + 360) {
+    #workshops {
+        .offer {
+            .workshop {
+                .row {
+                    svg {
+                        width: 24px;
+                    }
+                }
+                h3 {
+                    font-size: $fs-350;
+                }
             }
         }
     }

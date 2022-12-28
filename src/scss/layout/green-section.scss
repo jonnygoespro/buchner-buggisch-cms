@@ -43,6 +43,8 @@
 
         img {
             margin-block: calc($section-padding-mobile / 2);
+            aspect-ratio: 1;
+            object-fit: cover;
         }
 
         .text {

@@ -26,8 +26,8 @@
         .divider {
             height: 1px;
             width: 100%;
-            background-color: $neutral-200;
-            margin-top: 1rem;
+            background-color: $neutral-400;
+            margin-top: 5rem;
         }
     }
 }
@@ -52,6 +52,11 @@
 
             p:nth-of-type(2) {
                 margin-top: 2rem;
+            }
+
+            .divider {
+                display: none;
+                margin-top: 0rem;
             }
         }
     }
