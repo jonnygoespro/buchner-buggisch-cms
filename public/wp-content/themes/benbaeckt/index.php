@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS Endabgabe</title>
+    <script type="module" crossorigin src='<?php echo get_template_directory_uri();?>/main.js' defer></script>
+    <link rel='stylesheet' href='<?php echo get_template_directory_uri();?>/style.css'>
+    <?php wp_head(); ?>
+  </head>
+  <body>
+    <?php wp_body_open(); ?>
+    <header>
+      <a href="#" class="logo">BEN<br>BAECKT</a>
+      <div class="mainnav">
+
+        <div class="burger" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <ul>
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#green">Go Green</a></li>
+          <li><a href="#jobs">Join Us</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+
+        <div class="additional">
+          <div class="info">
+            <p>Connect</p>
+            <div class="divider"></div>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://de-de.facebook.com/" target="_blank">Facebook</a>
+          </div>
+
+          <div class="info">
+            <p>Get int Touch</p>
+            <div class="divider"></div>
+            <p>+31 415926535</p>
+            <p>benbaeckt@fakemail.de</p>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="heroText">
+        <p>For The</p>
+        <p>Love of Bread</p>
+      </div>
+    </section>
+
+    <section id="motto">
+      <img src="<?php echo get_template_directory_uri();?>/images/duncan-kidd-4vkEwpfm36I-unsplash-4a6d998b.jpg" alt="">
+      <div class="text">
+        <p>Das Handwerk des Bäckers ist wie eine Kunst, es erfordert Geduld, Präzision und Leidenschaft. Doch am Ende lohnt sich die Mühe, denn wer den Duft frisch gebackenen Brots einmal eingeatmet hat, der weiß, dass es kaum etwas Schöneres gibt.</p>
+        <p>Nach diesem Motto arbeitet und lebt die Familie Baeckmann schon seit über 100 Jahren.</p>
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <section id="workshops">
+      <h2>Workshops</h2>
+
+      <div class="offer">
+        <button class="workshop">
+          <h3>Brot</h3>
+          <p>Alles über das Handwerk des Sauerteigs</p>
+        </button>
+
+        <button class="workshop">
+          <h3>Croissants</h3>
+          <p>Die französische Kunst der Patisserie</p>
+        </button>
+
+        <button class="workshop">
+          <h3>Schokolade</h3>
+          <p>Pralinen, Kuchen, Muffins zum dahin schmelzen</p>
+        </button>
+      </div>
+    </section>
+
+    <section id="green">
+      <p>“Als Bäcker ist es mir wichtig, nachhaltig zu arbeiten und einen Beitrag zum Schutz unserer Umwelt zu leisten. Deshalb setze ich auf biologische Zutaten, die ohne den Einsatz von Pestiziden und synthetischen Düngemitteln angebaut werden.”</p>
+      <img src="<?php echo get_template_directory_uri();?>/images/noah-buscher-x8ZStukS2PM-unsplash-31186965.jpg" alt="">
+      <div class="text">
+        <p>“Um nachhaltig zu arbeiten, setze ich auch auf erneuerbare Energien in meiner Bäckerei. Dazu kaufe ich Ökostrom und nutze Photovoltaikanlagen”</p>
+        <p>-Ben Baeckman, Inhaber</p>
+      </div>
+    </section>
+
+    <section id="jobs">
+      <div class="text">
+          <h2>Wir suchen zwei neue Back-Helden!</h2>
+          <p>Du bist Bäcker*in und hast Backen zu deiner Superpower erklärt?<br><br>Du bist Konditor*in und lässt mit deinen süßen Kreationen jedes Herz höher schlagen?<br><br><a href="">Dann bewirb dich hier</a><br><br>Wir freuen uns auf deine köstlichen Ideen und die Chance, dich als neues Mitglied unseres Teams willkommen zu heißen!"</p>
+      </div>
+      <img src="<?php echo get_template_directory_uri();?>/images/Group 1-1af6e12b.png" alt="">
+    </section>
+
+    <section id="locations">
+      <h2>Standorte</h2>
+
+      <div class="locations">
+        <div class="location">
+          <img src="<?php echo get_template_directory_uri();?>/images/nick-karvounis-jN_M0McVNeI-unsplash-dfe86687.jpg" alt="">
+            <p>Standort 1</p>
+            <p>Sterneckstraße 1, 5020 Salzburg</p>
+            <div class="openingHours">
+              <p>Öffnungszeiten</p>
+              <p>Mo-Fr: 08:00 - 17:00<br>Sa & So: 07:00 - 15:00</p>
+            </div>
+        </div>
+
+        <div class="location">
+          <img src="<?php echo get_template_directory_uri();?>/images/pinar-kucuk-3-PfUgbyWEs-unsplash-690980c1.jpg" alt="">
+            <p>Standort 2</p>
+            <p>Sterneckstraße 2, 5020 Salzburg</p>
+            <div class="openingHours">
+              <p>Öffnungszeiten</p>
+              <p>Mo-Fr: 08:00 - 17:00<br>Sa & So: 07:00 - 15:00</p>
+            </div>
+        </div>
+
+        <div class="location">
+          <img src="<?php echo get_template_directory_uri();?>/images/andy-li-RndRFJ1v1kk-unsplash-ff91fbce.jpg" alt="">
+            <p>Standort 3</p>
+            <p>Sterneckstraße 3, 5020 Salzburg</p>
+            <div class="openingHours">
+              <p>Öffnungszeiten</p>
+              <p>Mo-Fr: 08:00 - 17:00<br>Sa & So: 07:00 - 15:00</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="sitemap">
+        <div class="column">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://de-de.facebook.com/" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><p>+31 415926535</p></li>
+            <li><p>benbaeckt@fakemail.de</p></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#green">Go Green</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#jobs">Join Us</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Workshops</h3>
+          <ul>
+            <li><a href="">Brot</a></li>
+            <li><a href="">Croissants</a></li>
+            <li><a href="">Schokolade</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info">
+        <p>Creators: Alexander Buchner, Jonas Buggisch</p>
+        <p>Bildquellen: <a href="https://unsplash.com/s/photos/bakery" target="_blank">https://unsplash.com/s/photos/bakery</a></p>
+      </div>
+    </footer>
+    <img class="footerImg" src="<?php echo get_template_directory_uri();?>/images/nathan-dumlao-YUzSjKG9QmU-unsplash-5935fa27.jpg" alt="">
+    <?php wp_footer(); ?>
+  </body>
+</html>

@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+wp-config.php
+*:Zone.Identifier
+vendor
+uploads
