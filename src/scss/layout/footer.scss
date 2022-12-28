@@ -30,3 +30,25 @@ footer {
 .footerImg {
     width: 100%;
 }
+
+@include breakpoint(0, $mobile) {
+    footer {
+        padding-top: $section-padding-mobile;
+
+        .sitemap {
+            flex-wrap: wrap;
+
+            .column {
+                flex: 1 0 35%;
+            }
+
+            .column:nth-of-type(1) {
+                margin-bottom: 2rem;
+            }
+
+            .column:nth-of-type(2), .column:nth-of-type(4) {
+                text-align: right;
+            }
+        }
+    }
+}
