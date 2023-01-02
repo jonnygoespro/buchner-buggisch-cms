@@ -4,10 +4,10 @@
 
   if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
       // Localhost
-      $ids_array = [6, 8, 11, 25, 28, 33, 48];
+      $ids_array = [6, 8, 11, 25, 28, 33];
   } else {
       // Server
-      $ids_array = [0];  
+      $ids_array = [63, 67, 106, 77, 80, 84];  
   }
 ?>
 

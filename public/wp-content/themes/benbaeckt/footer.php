@@ -7,7 +7,7 @@
       $ids_array_footer = [48];
   } else {
       // Server
-      $ids_array_footer = [0];  
+      $ids_array_footer = [103];  
   }
 ?>
 
