@@ -1,6 +1,19 @@
+<?php
+  $whitelist = array('127.0.0.1', '::1');
+  $ids_array_footer;
+
+  if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+      // Localhost
+      $ids_array_footer = [48];
+  } else {
+      // Server
+      $ids_array_footer = [0];  
+  }
+?>
+
 <footer>
         <?php 
-            $motto_query = new WP_Query( array("p" => 48) );
+            $motto_query = new WP_Query( array("p" => $ids_array_footer[0]) );
             if ($motto_query->have_posts() ):
               while ($motto_query->have_posts() ): $motto_query->the_post(); 
           ?>

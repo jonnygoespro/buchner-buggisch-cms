@@ -1,3 +1,16 @@
+<?php
+  $whitelist = array('127.0.0.1', '::1');
+  $ids_array;
+
+  if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
+      // Localhost
+      $ids_array = [6, 8, 11, 25, 28, 33, 48];
+  } else {
+      // Server
+      $ids_array = [0];  
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -38,7 +51,7 @@
       <section id="hero">
         <div class="heroText">
           <?php 
-            $hero_query = new WP_Query( array("p" => 6) );
+            $hero_query = new WP_Query( array("p" => $ids_array[0]) );
             if ($hero_query->have_posts() ):
               while ($hero_query->have_posts() ): $hero_query->the_post(); 
           ?>
@@ -55,7 +68,7 @@
 
       <section id="motto">
         <?php 
-            $motto_query = new WP_Query( array("p" => 8) );
+            $motto_query = new WP_Query( array("p" => $ids_array[1]) );
             if ($motto_query->have_posts() ):
               while ($motto_query->have_posts() ): $motto_query->the_post(); 
           ?>
@@ -77,7 +90,7 @@
 
       <section id="workshops">
         <?php 
-            $workshop_header_query = new WP_Query( array("p" => 11) );
+            $workshop_header_query = new WP_Query( array("p" => $ids_array[2]) );
             if ($workshop_header_query->have_posts() ):
               while ($workshop_header_query->have_posts() ): $workshop_header_query->the_post(); 
           ?>
@@ -113,7 +126,7 @@
 
       <section id="green">
         <?php 
-            $green_query = new WP_Query( array("p" => 25) );
+            $green_query = new WP_Query( array("p" => $ids_array[3]) );
             if ($green_query->have_posts() ):
               while ($green_query->have_posts() ): $green_query->the_post(); 
         ?>
@@ -134,7 +147,7 @@
 
       <section id="jobs">
         <?php 
-            $jobs_query = new WP_Query( array("p" => 28) );
+            $jobs_query = new WP_Query( array("p" => $ids_array[4]) );
             if ($jobs_query->have_posts() ):
               while ($jobs_query->have_posts() ): $jobs_query->the_post(); 
         ?>
@@ -152,7 +165,7 @@
 
       <section id="locations">
         <?php 
-            $motto_query = new WP_Query( array("p" => 33) );
+            $motto_query = new WP_Query( array("p" => $ids_array[5]) );
             if ($motto_query->have_posts() ):
               while ($motto_query->have_posts() ): $motto_query->the_post(); 
           ?>
