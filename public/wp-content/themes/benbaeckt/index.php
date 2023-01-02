@@ -91,11 +91,11 @@
         <div class="offer">
 
             <?php
-            $workshop_query = new WP_Query( array("category_name" => "workshop") );
+            $workshop_query = new WP_Query( array("category_name" => "workshop", "order" => "ASC") );
             if ($workshop_query->have_posts() ):
               while ($workshop_query->have_posts() ): $workshop_query->the_post(); 
             ?>
-              <button class="workshop">
+              <button class="workshop" onclick="window.location.href = '<?php the_permalink(); ?>'">
               <div class="row">
                 <h3><?php the_title(); ?></h3>
                 <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
