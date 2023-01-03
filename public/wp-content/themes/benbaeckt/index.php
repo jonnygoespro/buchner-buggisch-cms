@@ -146,13 +146,13 @@
 
       <section id="jobs">
         <?php 
-            $jobs_query = new WP_Query( array("p" => $ids_array[4]) );
+            $jobs_query = new WP_Query( array("pagename" => 'jobs', 'posts_per_page' => '1') );
             if ($jobs_query->have_posts() ):
               while ($jobs_query->have_posts() ): $jobs_query->the_post(); 
         ?>
         <div class="text">
-            <h2><?php the_title(); ?></h2>
-            <p><?php echo get_post_custom_values("Baeckeransprache")[0]; ?><br><br><?php echo get_post_custom_values("Konditoransprache")[0]; ?><br><br><a href="<?php the_permalink(); ?>"><?php echo get_post_custom_values("bewerbungslink")[0]; ?></a><br><br></p><?php the_content(); ?>
+            <h2><?php echo get_post_custom_values("Header")[0]; ?></h2>
+            <p><?php echo get_post_custom_values("Baeckeransprache")[0]; ?><br><br><?php echo get_post_custom_values("Konditoransprache")[0]; ?><br><br><a href="<?php the_permalink(); ?>"><?php echo get_post_custom_values("bewerbungslink")[0]; ?></a><br><br></p><p><?php echo get_post_custom_values("Description")[0]; ?></p>
         </div>
         <?php the_post_thumbnail(); ?>
         <?php
