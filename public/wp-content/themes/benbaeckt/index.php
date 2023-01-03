@@ -4,10 +4,10 @@
 
   if(in_array($_SERVER['REMOTE_ADDR'], $whitelist)){
       // Localhost
-      $ids_array = [6, 8, 11, 25, 28, 33];
+      $ids_array = [6, 8, 11, 25, 59, 33];
   } else {
       // Server
-      $ids_array = [63, 67, 106, 77, 80, 84];  
+      $ids_array = [63, 67, 106, 77, 179, 84];  
   }
 ?>
 
@@ -146,7 +146,7 @@
 
       <section id="jobs">
         <?php 
-            $jobs_query = new WP_Query( array("pagename" => 'jobs', 'posts_per_page' => '1') );
+            $jobs_query = new WP_Query( array("page_id" => $ids_array[4], 'posts_per_page' => '1') );
             if ($jobs_query->have_posts() ):
               while ($jobs_query->have_posts() ): $jobs_query->the_post(); 
         ?>
